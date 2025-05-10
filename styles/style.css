@@ -5,3 +5,86 @@ body {
 .welcome-message {
     color: lightblue;
 }
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#draggables-container {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    min-height: 5em;
+    margin: 2.5em;
+    border: solid 5px white;
+}
+
+.draggable-box {
+    color: white;
+    padding: 2em;
+    height: 4em;
+    width: 4em;
+    margin: 1em;
+    background-color: black;
+}
+
+.border-one {
+    border: solid 5px red;
+}
+
+.border-two {
+    border: solid 5px orange;
+}
+
+.border-three {
+    border: solid 5px yellow;
+}
+
+.border-four {
+    border: solid 5px green;
+}
+
+.border-five {
+    border: solid 5px blue;
+}
+
+.border-six {
+    border: solid 5px indigo;
+}
+
+.border-seven {
+    border: solid 5px violet;
+}
+
+.border-eight {
+    border: solid 5px gold;
+}
+
+.box-container {
+    display: flex;
+    gap: 5em;
+    justify-content: space-evenly;
+}
+
+.placeholder {
+    background-color: white;
+    padding: 2em;
+    height: 4em;
+    width: 4em;
+    margin: 1em;
+}
+
+.drag-landing-box {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-width: 20em;
+    min-height: 75vh;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px white;
+}

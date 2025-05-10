@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <p class="welcome-message">Welcome to the Draggable Tutorial</p>
+
     <script src="draggable.js"></script>
+
+    <div id="draggables-container" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+        <div class="draggable-box center-content border-one" draggable="true" ondragstart="dragStartHandler(event)" id="boxOne">
+            R
+        </div>
+        <div class="draggable-box center-content border-two" draggable="true" ondragstart="dragStartHandler(event)" id="boxTwo">
+            O
+        </div>
+        <div class="draggable-box center-content border-three" draggable="true" ondragstart="dragStartHandler(event)" id="boxThree">
+            Y
+        </div>
+        <div class="draggable-box center-content border-four" draggable="true" ondragstart="dragStartHandler(event)" id="boxFour">
+            G
+        </div>
+        <div class="draggable-box center-content border-five" draggable="true" ondragstart="dragStartHandler(event)" id="boxFive">
+            B
+        </div>
+        <div class="draggable-box center-content border-six" draggable="true" ondragstart="dragStartHandler(event)" id="boxSix">
+            I
+        </div>
+        <div class="draggable-box center-content border-seven" draggable="true" ondragstart="dragStartHandler(event)" id="boxSeven">
+            V
+        </div>
+    </div>
+    <div class="box-container" id="dropZone" >
+        <div class="drag-landing-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+        <div class="drag-landing-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+        <div class="drag-landing-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </div>
 </body>
 </html>
