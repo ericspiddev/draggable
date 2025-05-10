@@ -5,3 +5,51 @@ body {
 .welcome-message {
     color: lightblue;
 }
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.draggables-container {
+    font-size: 16px;
+    display: flex;
+    gap: 2em;
+}
+
+.draggable-box {
+    color: white;
+    padding: 3em;
+    height: 4em;
+    width: 4em;
+    margin: 1em;
+}
+
+.border-one {
+    border: solid 5px blue;
+}
+
+.border-two {
+    border: solid 5px green;
+}
+
+.border-three {
+    border: solid 5px orange;
+}
+
+.border-four {
+    border: solid 5px purple;
+}
+
+.box-container {
+    display: flex;
+    gap: 5em;
+    justify-content: space-evenly;
+}
+
+.drag-box{
+    background-color: white;
+    min-width: 20em;
+    min-height: 75vh;
+}

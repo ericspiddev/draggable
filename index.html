@@ -7,7 +7,33 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <p class="welcome-message">Welcome to the Draggable Tutorial</p>
+
     <script src="draggable.js"></script>
+    <p class="welcome-message">Welcome to the Draggable Tutorial</p>
+
+    <div class="draggables-container">
+        <div class="draggable-box center-content border-one" draggable="true" id="boxOne">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-two" draggable="true">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-three" draggable="true">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-four" draggable="true">
+            drag me
+        </div>
+    </div>
+    <div class="box-container" id="dropZone" >
+        <div class="drag-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <h1></h1>
+        </div>
+
+        <div class="drag-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <h1></h1>
+        </div>
+    </div>
+
 </body>
 </html>
