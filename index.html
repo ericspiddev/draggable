@@ -9,31 +9,50 @@
 <body>
 
     <script src="draggable.js"></script>
-    <p class="welcome-message">Welcome to the Draggable Tutorial</p>
 
-    <div class="draggables-container">
-        <div class="draggable-box center-content border-one" draggable="true" id="boxOne">
+    <div id="draggables-container" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+        <div class="draggable-box center-content border-one" draggable="true" ondragstart="dragStartHandler(event)" id="boxOne">
             drag me
         </div>
-        <div class="draggable-box center-content border-two" draggable="true">
+        <div class="draggable-box center-content border-two" draggable="true" ondragstart="dragStartHandler(event)" id="boxTwo">
             drag me
         </div>
-        <div class="draggable-box center-content border-three" draggable="true">
+        <div class="draggable-box center-content border-three" draggable="true" ondragstart="dragStartHandler(event)" id="boxThree">
             drag me
         </div>
-        <div class="draggable-box center-content border-four" draggable="true">
+        <div class="draggable-box center-content border-four" draggable="true" ondragstart="dragStartHandler(event)" id="boxFour">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-five" draggable="true" ondragstart="dragStartHandler(event)" id="boxFive">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-six" draggable="true" ondragstart="dragStartHandler(event)" id="boxSix">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-seven" draggable="true" ondragstart="dragStartHandler(event)" id="boxSeven">
+            drag me
+        </div>
+        <div class="draggable-box center-content border-eight" draggable="true" ondragstart="dragStartHandler(event)" id="boxEight">
             drag me
         </div>
     </div>
     <div class="box-container" id="dropZone" >
         <div class="drag-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
-            <h1></h1>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
         </div>
 
         <div class="drag-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
-            <h1></h1>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+        <div class="drag-box" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
         </div>
     </div>
-
 </body>
 </html>
